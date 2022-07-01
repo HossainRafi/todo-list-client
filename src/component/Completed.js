@@ -14,7 +14,7 @@ const Completed = () => {
         <table className="table w-full my-6">
           <thead>
             <tr>
-              <th>Completed</th>
+              <th>Complete</th>
               <th>Date</th>
               <th>Task</th>
             </tr>

@@ -31,7 +31,7 @@ const Calendar = () => {
           Swal.fire({
             position: "top-center",
             icon: "success",
-            title: "Added a new Task",
+            title: "Task Added Successfully",
             showConfirmButton: false,
             timer: 1500,
           });
