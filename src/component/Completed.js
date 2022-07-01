@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 const Completed = () => {
   const [completedTask, setCompletedTask] = useState([]);
   useEffect(() => {
-    fetch("https://secure-harbor-66857.herokuapp.com/completed")
+    fetch("http://localhost:5000/completed")
       .then((res) => res.json())
       .then((data) => setCompletedTask(data));
   }, [completedTask]);

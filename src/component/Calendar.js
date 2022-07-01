@@ -18,7 +18,7 @@ const Calendar = () => {
       task,
       completed: false,
     };
-    fetch("https://secure-harbor-66857.herokuapp.com/task", {
+    fetch("http://localhost:5000/task", {
       method: "POST",
       headers: {
         "content-type": "application/json",
