@@ -18,7 +18,7 @@ const Calendar = () => {
       task,
       completed: false,
     };
-    fetch("http://localhost:5000/task", {
+    fetch("https://ancient-depths-76424.herokuapp.com/task", {
       method: "POST",
       headers: {
         "content-type": "application/json",

@@ -8,7 +8,7 @@ const Home = () => {
   const navigate = useNavigate();
   const [allTask, setAllTask] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/task")
+    fetch("https://ancient-depths-76424.herokuapp.com/task")
       .then((res) => res.json())
       .then((data) => setAllTask(data));
   }, [allTask]);
@@ -18,7 +18,7 @@ const Home = () => {
   };
   const handleCompleted = (id) => {
     console.log(id);
-    fetch(`http://localhost:5000/completed/${id}`, {
+    fetch(`https://ancient-depths-76424.herokuapp.com/completed/${id}`, {
       method: "put",
       headers: {
         "content-type": "application/json",

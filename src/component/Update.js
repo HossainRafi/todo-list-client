@@ -10,7 +10,7 @@ const Update = () => {
   const { date, task } = updateTask;
   console.log(task);
   useEffect(() => {
-    fetch(`http://localhost:5000/task/${id}`)
+    fetch(`https://ancient-depths-76424.herokuapp.com/task/${id}`)
       .then((res) => res.json())
       .then((data) => setUpdateTask(data));
   }, [id]);
@@ -19,7 +19,7 @@ const Update = () => {
     e.preventDefault();
     const task = e.target.task.value;
 
-    fetch(`http://localhost:5000/task/${id}`, {
+    fetch(`https://ancient-depths-76424.herokuapp.com/task/${id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
