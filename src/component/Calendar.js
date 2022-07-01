@@ -45,7 +45,7 @@ const Calendar = () => {
       <div className="hero-content flex-col lg:flex-row">
         <DayPicker mode="single" selected={selected} onSelect={setSelected} />
         <div>
-          <h1 className="text-3xl text-center font-bold">Add a new task</h1>
+          <h1 className="text-3xl text-center font-bold">Add A New Task</h1>
           <form onSubmit={handleSubmit}>
             <input
               className="text-center w-full mt-4 text-2xl font-bold"
@@ -57,12 +57,16 @@ const Calendar = () => {
             />
             <br />
             <textarea
-              className="w-full rounded-lg m-2 p-2 border"
+              className="w-full rounded-lg m-2 p-2 border-2"
               name="task"
-              placeholder="Add A New Task"
+              placeholder="Write your task here....."
             ></textarea>
             <div className="flex justify-center">
-              <input type="submit" value="Add" className="btn " />
+              <input
+                type="submit"
+                value="Click To Add"
+                className="btn btn-sm btn-primary font-bold"
+              />
             </div>
           </form>
         </div>
