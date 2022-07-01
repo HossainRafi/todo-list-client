@@ -56,11 +56,12 @@ const Calendar = () => {
               disabled
             />
             <br />
-            <textarea
+            <input
               className="w-full rounded-lg m-2 p-2 border-2"
               name="task"
               placeholder="Write your task here....."
-            ></textarea>
+              type="text"
+            ></input>
             <div className="flex justify-center">
               <input
                 type="submit"
