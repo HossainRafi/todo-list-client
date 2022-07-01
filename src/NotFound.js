@@ -1,7 +1,9 @@
+import error from "./error.gif"
+
 const NotFound = () => {
   return (
     <div>
-      <h1>404 Page Not Found</h1>
+      <img className="h-[88vh] mx-auto" src={error} alt="" />
     </div>
   );
 };

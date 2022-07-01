@@ -1,11 +1,11 @@
+import React from "react";
+
 const Footer = () => {
-  const date = new Date();
-  const year = date.getFullYear();
   return (
     <div>
-      <p className="text-center">
-        <small>Copy &#169; {year} All Rights reserved by Rafi</small>
-      </p>
+      <div className="bg-gray-300 h-auto flex flex-col items-center justify-center">
+        <small className="font-serif py-3">&#169; Copyright, 2022</small>
+      </div>
     </div>
   );
 };
