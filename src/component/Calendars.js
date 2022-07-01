@@ -6,7 +6,7 @@ const Calendars = () => {
   const [selected, setSelected] = useState(new Date());
 
   return (
-    <div className="flex justify-center flex-wrap">
+    <div className="flex justify-center flex-wrap min-h-screen">
       <p>
         <DayPicker
           numberOfMonths={3}

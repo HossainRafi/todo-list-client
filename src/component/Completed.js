@@ -8,7 +8,7 @@ const Completed = () => {
       .then((data) => setCompletedTask(data));
   }, [completedTask]);
   return (
-    <div>
+    <div className="min-h-screen">
       <h1 className="text-center text-2xl font-bold">Completed Task</h1>
       <div className="overflow-x-auto">
         <table className="table w-full my-6">
